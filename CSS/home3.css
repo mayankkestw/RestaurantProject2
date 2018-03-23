@@ -1,0 +1,75 @@
+body{
+    background-color: oldlace;
+}
+
+
+
+/*Navigation*/
+
+nav{
+    font-family: 'Rancho';
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Search*/
+#search{
+    display: flex;
+    margin-top: 65px;
+    
+}
+.container-fluid{
+    background: url('../Media/tb.jpg') no-repeat center center;
+    background-size: cover;
+}
+h1{
+    color: aliceblue;
+}
+#search input{
+    
+}
+
+
+
+
+/*Restaurants*/
+#Restaurants{
+    
+   
+}
+#Restaurants h2{
+    font-family: 'Acme';
+}
+
+/*food*/
+#food .container{
+   margin-top: 60px;
+   padding: 10px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

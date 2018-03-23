@@ -1,0 +1,41 @@
+.jumbotron{
+    background: url('../Media/tb.jpg') no-repeat center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+h1{
+   color: aliceblue;
+   text-align: center;
+   margin-top: 8%;
+}
+
+nav{
+    position: fixed;
+}
+.row:last-child{
+    align-content: center;
+    margin-left: 32%;
+}
+.card{
+    background-color: black;
+    color: antiquewhite;
+}
+a{
+    color: aqua;
+    text-decoration:none !important;
+}
+.figure-img{
+    height: 20%;
+    width: 30%;
+}
+a:hover{
+   color:aqua;
+}
+img1{
+    height=20% !important;
+    width=20% !important; 
+}
+
+    

@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Foodie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="apple-touch-icon" href="">
+    <link rel="shortcut icon" href="../Media/icon.png" type="image/x-icon">
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="../CSS/home3.css">
+</head>
+
+<body>
+    
+   <nav class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+         <div class="container">     
+              
+             <a class="navbar-brand" href="#"><img src="../Media/icon.png" height="40px"> Foodie</a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarresponse" aria-controls="navbarresponse" aria-expanded="false" aria-label="toggle-navigation">
+             
+                <span class="navbar-toggler-icon"></span>
+                   
+               </button>
+                 
+                 <div class="collapse navbar-collapse" id="navbarresponse">
+             
+                 <ul class="navbar-nav mr-auto">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#Restaurants">About</a>
+                    <a class="nav-link" href="#">Contact</a>
+                    
+                    <div class="dropdown">
+                     <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                       Food Services <span class="caret text-center"></span>
+                     </button>
+                      <ul class="dropdown-menu text-center">
+                        
+                        <a href="#MakeOrder" style="text-decoration: none">My Orders</a><br>
+                        <a href="#Track" style="text-decoration: none">Track Orders</a><br>
+                        <a href="#Special" style="text-decoration: none">Today's Special</a>
+
+                        
+                      
+                      </ul>
+                     
+                    </div>
+                     
+                 </ul>
+                     
+                 <ul class="navbar-nav ml-auto">
+                    <img class="img" src="../Media/offer2.png" title="Offers" height="40px" width="40px" href="#offers">
+                     &nbsp;
+                    <a class="btn btn-info" href="#Login">Login</a>
+                     &nbsp;
+                    <a class="btn btn-secondary" href="#SignUp">Sign Up</a> 
+                 </ul>
+                     
+                </div>
+         </div>
+   </nav> 
+    
+    
+    <section id="search">
+    
+    
+     <div class="container-fluid">
+        
+        <div class="row">
+         
+         <div class="col"><center><h1 class="display-1">LIVE LOVE EAT!</h1></center></div>
+            
+         </div>
+         
+         <div class="row">
+         
+         
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 "> 
+             <form method="get" action="city.php">
+                 <input list="city" name="city1" type="search" class="form-control text-center" placeholder="Enter City name">
+                    <datalist id="city">
+                       <option value="Agra">
+                       <option value="Ahmedabad">
+                       <option value="Alappuzha">
+                       <option value="Alwar">
+                       <option value="Amritsar">
+                       <option value="Aurangabad">
+                       <option value="Bangalore">
+                       <option value="Bharatpur">
+                       <option value="Bhavnagar">
+                       <option value="Bikarner">
+                       <option value="Bhopal">
+                       <option value="Bhubaneshwar">
+                       <option value="Bodh Gaya">
+                       <option value="Calangute">
+                       <option value="Chandigarh">
+                       <option value="Chennai">
+                       <option value="Chittaurgarh">
+                       <option value="Coimbatore">
+                       <option value="Cuttack">
+                       <option value="Dalhousie">
+                       <option value="Dehradun">
+                       <option value="Delhi">
+                       <option value="Ernakulam">
+                       <option value="Faridabad">
+                       <option value="Gaya">
+                       <option value="Gangtok">
+                       <option value="Ghaziabad">
+                       <option value="Gurgaon">
+                       <option value="Guwahati">
+                       <option value="Gwalior">
+                       <option value="Haridwar">
+                       <option value="Hyderabad">
+                       <option value="Imphal">
+                       <option value="Indore">
+                       <option value="Jabalpur">
+                       <option value="Jaipur">
+                       <option value="Jaisalmer">
+                       <option value="Jalandhar">
+                       <option value="Jamshedpur">
+                       <option value="Jodhpur">
+                       <option value="Junagadh">
+                       <option value="Kanpur">
+                       <option value="Kanyakumari">
+                       <option value="Khandala">
+                       <option value="Kochi">
+                       <option value="Kodaikanai">
+                       <option value="Kolkata">
+                       <option value="Kota">
+                       <option value="Kottayam">
+                       <option value="Kovalam">
+                       <option value="Lucknow">
+                       <option value="Ludhiana">
+                       <option value="Madurai">
+                       <option value="Manali">
+                       <option value="Mangalore">
+                       <option value="Margao">
+                       <option value="Mathura">
+                       <option value="Mountabu">
+                       <option value="Mumbai">
+                       <option value="Mussoorie">
+                       <option value="Mysore">
+                       <option value="Nagpur">
+                       <option value="Nainital">
+                       <option value="Noida">
+                       <option value="Ooty">
+                       <option value="Panaji">
+                       <option value="Patna">
+                       <option value="Pondicherry">
+                       <option value="Porbandar">
+                       <option value="Pune">
+                       <option value="Puri">
+                       <option value="Pushkar">
+                       <option value="Rajkot">
+                       <option value="Rameshwaram">
+                       <option value="Ranchi">
+                       <option value="Sanchi">
+                       <option value="Secunderabad">
+                       <option value="Shimla">
+                       <option value="Surat">
+                       <option value="Thanjavur">
+                       <option value="Thiruchchirapali">
+                       <option value="Thrissur">
+                       <option value="Tirumala">
+                       <option value="Udaipur">
+                       <option value="Vadodara">
+                       <option value="Varanasi">
+                       <option value="Vijayawada">
+                       <option value="Vishakapatnam">
+                    </datalist>
+             </form>
+            </div>
+         
+         
+         </div>
+           
+           <br>
+         
+         <div class="row">
+         
+          <div class="col-12">
+             
+             <center>
+              
+                 <button type="button" class="btn btn-primary">Find</button>
+              
+             </center>              
+          </div>
+         
+         </div><br><br>
+     
+     </div>
+    
+    
+    </section>
+    
+    
+    
+    <section id="Restaurants">
+        
+    <div class="row">
+        
+        <div class="col-12">
+        
+         <center><h2 class="display-4">Top Restaurants</h2></center>
+        
+        </div>
+        
+    </div>
+    
+    <div class="row">
+        
+        
+        <div class="col-sm-6 col-xs-12 col-md-6 col-lg-3 col-xl-3">
+        
+        <a href="#" style="text-decoration: none; color: black;">
+            <div class="card" >
+                <img class="card-img-top" src="../Media/rest5.jpg" alt="Card image">
+                   <div class="card-body">
+                      <h4 class="card-title">Gupta Restaurant</h4>
+                        <p class="card-text">Some quick example text to build on the card title and content.</p>
+                           <a href="#" class="btn btn-primary">View</a>
+                   </div>
+        </div></a>
+        
+        </div>
+        
+        <div class="col-sm-6 col-xs-12 col-md-6 col-lg-3 col-xl-3">
+         <a href="#" style="text-decoration: none; color: black;">
+            <div class="card" >
+                <img class="card-img-top" src="../Media/rest2.jpg" alt="Card image">
+                   <div class="card-body">
+                      <h4 class="card-title">Shagun Restaurant</h4>
+                        <p class="card-text">Some quick example text to build on the card title and content.</p>
+                           <a href="#" class="btn btn-primary">View</a>
+                   </div>
+             </div></a>
+        
+        </div>
+        
+        
+        <div class="col-sm-6 col-xs-12 col-md-6 col-lg-3 col-xl-3">
+        <a href="#" style="text-decoration: none; color: black;">
+        <div class="card" >
+                <img class="card-img-top" src="../Media/rsz_restaurant-449952_1920.jpg" alt="Card image">
+                   <div class="card-body">
+                      <h4 class="card-title">Crown Interior</h4>
+                        <p class="card-text">Some quick example text to build on the card title and content.</p>
+                           <a href="#" class="btn btn-primary">View</a>
+                   </div>
+            </div></a>
+        
+        </div>
+        
+        <div class="col-sm-6 col-xs-12 col-md-6 col-lg-3 col-xl-3">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img class="card-img-top" src="../Media/rest4.jpg" alt="Card image">
+                   <div class="card-body">
+                      <h4 class="card-title">Rivendall Restaurant</h4>
+                        <p class="card-text">Some quick example text to build on the card title and content.</p>
+                           <a href="#" class="btn btn-primary">View</a>
+                   </div>
+              </div></a>
+        </div>
+        
+    
+    </div>
+    
+    
+    </section>
+    
+    <section id="food">
+    
+      <div class="container">
+        
+        <div class="row">
+          
+             
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            
+             <img src="../Media/buffet-315691.jpg"  height="100%" width="100%">
+            
+            </div>
+            
+            
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            
+            <center><h3>Cuisines</h3></center>
+             <div class="cuisines">
+                <div class="row">
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <ul>
+                  <li><a href="#American">American</a></li>
+                  <li><a href="#Andhra">Andhra</a></li>
+                  <li><a href="#Arabic">Arabic</a></li>
+                  <li><a href="#Bengali">Bengali</a></li>
+                  <li><a href="#Biryani">Biryani</a></li>
+                  <li><a href="#Burgers">Burgers</a></li>
+                  <li><a href="#Cakes and Bakery">Cakes and Bakery</a></li>
+                  <li><a href="#Chinese">Chinese</a></li>
+                  <li><a href="#Continental">Continental</a></li>
+                  <li><a href="#">Desserts</a></li>
+                  <li><a href="#">European</a></li>  
+                  <li><a href="#">Fast Food</a></li>  
+                    
+                </ul>
+              </div> 
+                 
+                 
+                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                  <ul>
+                  <li><a href="#Hyderabadi">Hyderabadi</a></li>  
+                  <li><a href="#Ice Creams">Ice Creams</a></li>  
+                  <li><a href="#Italian">Italians</a></li>  
+                  <li><a href="#Japanese">Japanese</a></li>  
+                  <li><a href="#Juice">Juices</a></li>  
+                  <li><a href="#Kebab">Kebab</a></li>
+                  <li><a href="#Maharashtrian">Maharashtrian</a></li>
+                  <li><a href="#Mexican">Mexican</a></li>
+                  <li><a href="#MiddleEast">Middle Eastern</a></li>
+                  </ul>
+                     
+                 </div>
+                </div>
+             </div>
+            
+            </div>
+          
+          
+          </div>
+      </div>
+    
+    </section>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
