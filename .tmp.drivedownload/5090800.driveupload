@@ -1,0 +1,120 @@
+body{
+    background-color: oldlace; 
+}
+
+
+
+/*Navigation*/
+
+nav{
+    font-family: 'Rancho';
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Search*/
+#search{
+    display: flex;
+    margin-top: 65px;
+    
+}
+.container-fluid{
+    background: url('../Media/tb.jpg') no-repeat center center;
+    background-size: cover;
+}
+h1{
+    color: aliceblue;
+}
+#search input{
+    
+}
+
+
+
+
+/*Restaurants*/
+#Restaurants{
+    
+   
+}
+#Restaurants h2{
+    font-family: 'Acme';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+/*food*/
+#food .container{
+   margin-top: 60px;
+   padding: 10px;
+   
+}
+#food h3{
+    margin-top: 20px;
+    border: 1px black;
+    border-bottom-style: groove;
+    background-color: burlywood;
+    opacity: 0.8;
+    font-size: 2.5em;
+}
+
+
+/*Cuisines*/
+.cuisines{
+    margin-top: 20px;
+    background-color: wheat;
+    opacity: 0.5;
+}
+
+.cuisines li{
+        list-style-type: none;
+}
+.cuisines li a{
+    text-decoration: none;
+}
+.cuisines li a:hover{
+    color: black;
+    font-size: 1.5em;
+    transition-duration: 0.6s;
+}
+
+/*cards*/
+.card{
+    box-shadow: 0px 0px 0 0;
+    background: yellow;
+}
+.card:hover{
+    box-shadow: 4px 4px 0 0;
+    transition-duration: 1s;
+}
+
+.card:focus{
+    box-shadow: 2px 2px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
