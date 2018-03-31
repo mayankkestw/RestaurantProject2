@@ -1,5 +1,5 @@
 body{
-    background-color: oldlace; 
+    background-color: transparent; 
 }
 
 
@@ -66,7 +66,7 @@ h1{
     margin-top: 20px;
     border: 1px black;
     border-bottom-style: groove;
-    background-color: burlywood;
+    background-color: papayawhip;
     opacity: 0.8;
     font-size: 2.5em;
 }
@@ -75,7 +75,7 @@ h1{
 /*Cuisines*/
 .cuisines{
     margin-top: 20px;
-    background-color: wheat;
+    background-color: transparent;
     opacity: 0.5;
 }
 
@@ -105,9 +105,30 @@ h1{
     box-shadow: 2px 2px 0 0;
 }
 
-
-
-
+/*foot*/
+#footer{
+    padding: 25px 0 0 0;
+    background-color: black;
+    color: whitesmoke;
+}
+.footrow{
+    height: 100%;
+}
+#footer ul{
+   text-align: center;
+}
+#footer li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+}
+#footer a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.fa-star{
+    color: gold;
+}
 
 
 

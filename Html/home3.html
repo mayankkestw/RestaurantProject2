@@ -21,11 +21,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="stylesheet" href="../CSS/home3.css">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
 </head>
 
 <body>
   
-   <nav class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+   <nav class="navbar navbar-expand-md navbar-dark bg-danger fixed-top" id="navigation">
          <div class="container">     
               
              <a class="navbar-brand" href="#"><img src="../Media/icon.png" height="40px"> Foodie</a>
@@ -38,9 +40,9 @@
                  <div class="collapse navbar-collapse" id="navbarresponse">
              
                  <ul class="navbar-nav mr-auto">
-                    <a class="nav-link" href="#">Home</a>
-                    <a class="nav-link" href="#Restaurants">About</a>
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link home" href="#">Home</a>
+                    <a class="nav-link about" href="#Restaurants">About</a>
+                    <a class="nav-link contact" href="#">Contact</a>
                     
                     <div class="dropdown">
                      <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
@@ -206,7 +208,7 @@
     
     </section>
     
-    
+    <hr style="background: lightgray ; width: 80%">
     
     <section id="Restaurants">
         
@@ -229,9 +231,11 @@
             <div class="card" >
                 <img class="card-img-top" src="../Media/rest5.jpg" alt="Card image">
                    <div class="card-body">
-                      <h4 class="card-title">Gupta Restaurant</h4>
-                        <p class="card-text">Some quick example text to build on the card title and content.</p>
-                           <a href="#" class="btn btn-primary">View</a>
+                      <h4 class="card-title">Barbequee Nation</h4>
+                        <p class="card-text">Location : Jalandhar, Punjab</p>
+                        <p>Veg, Non-Veg, Kebab, Punjabi, and more</p>
+                           <a href="../Html/ViewRestaurant.html" class="btn btn-primary">View</a>
+                            &nbsp;&nbsp; <span class="fa fa-star">Rating : 4/5</span>
                    </div>
         </div></a>
         
@@ -243,8 +247,10 @@
                 <img class="card-img-top" src="../Media/rest2.jpg" alt="Card image">
                    <div class="card-body">
                       <h4 class="card-title">Shagun Restaurant</h4>
-                        <p class="card-text">Some quick example text to build on the card title and content.</p>
-                           <a href="#" class="btn btn-primary">View</a>
+                        <p class="card-text">Location : Zira, Punjab</p>
+                        <p>Veg, Non-Veg, South Indian, Gujarati, and more</p>
+                           <a href="../Html/ViewRestaurant.html" class="btn btn-primary">View</a>
+                          &nbsp;&nbsp;<span class="fa fa-star">Rating : 4.2/5</span>
                    </div>
              </div></a>
         
@@ -256,9 +262,11 @@
         <div class="card" >
                 <img class="card-img-top" src="../Media/rsz_restaurant-449952_1920.jpg" alt="Card image">
                    <div class="card-body">
-                      <h4 class="card-title">Crown Interior</h4>
-                        <p class="card-text">Some quick example text to build on the card title and content.</p>
-                           <a href="#" class="btn btn-primary">View</a>
+                      <h4 class="card-title">Heat 7</h4>
+                        <p class="card-text">Location : New Jawahar Nagar Market, Punjab</p>
+                        <p>Veg, Non-Veg, and American</p>
+                           <a href="../Html/ViewRestaurant.html" class="btn btn-primary">View</a>
+                       &nbsp;&nbsp; <span class="fa fa-star">Rating : 4.5/5</span>
                    </div>
             </div></a>
         
@@ -269,9 +277,11 @@
             <div class="card">
                 <img class="card-img-top" src="../Media/rest4.jpg" alt="Card image">
                    <div class="card-body">
-                      <h4 class="card-title">Rivendall Restaurant</h4>
-                        <p class="card-text">Some quick example text to build on the card title and content.</p>
-                           <a href="#" class="btn btn-primary">View</a>
+                      <h4 class="card-title">Zaika Restaurant</h4>
+                        <p class="card-text">Location : Jalandhar, Punjab</p>
+                        <p>Veg, Non-Veg, South Indian, Gujarati, more</p>
+                           <a href="../Html/ViewRestaurant.html" class="btn btn-primary">View</a>
+                       &nbsp;&nbsp;<span class="fa fa-star">Rating : 3.9/5</span>
                    </div>
               </div></a>
         </div>
@@ -281,7 +291,7 @@
     
     
     </section>
-    
+    <hr style="background: lightgray ; width: 80%">
     <section id="food">
     
       <div class="container">
@@ -291,7 +301,7 @@
              
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
             
-             <img src="../Media/buffet-315691.jpg"  height="100%" width="100%">
+             <img src="../Media/buffet-315691.jpg" class=" img-responsive img-rounded" height="100%" width="100%">
             
             </div>
             
@@ -341,6 +351,7 @@
     
     </section>
     
+    <hr style="background: lightgray ; width: 80%">
     
     <section id="modals">
      <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -394,8 +405,58 @@
     
     
     </section>
+  
     
     
+<section id="footer">
+    
+ <div class="container">
+    <div class="row footrow">
+    
+    <div class="col-sm-12 col-md-6"><img class="img-responsive" height = "100%" width="100%" src="../Media/untitled.png"></div>
+    
+    <div class="col-sm-12 col-md-6"><img class="" src="../Media/googleplay.png" height="100%" width="100%"></div></div>
+    
+     <hr style="background: lightgray ; width: 90%">
+
+    <div class="foot"> <ul>
+     <li><a href="#">Privacy Policy</a></li>
+     <li><a href="#">&copy; Copyright 2018 Foodie</a></li>
+     <li><a href="#">Terms and Conditions</a></li>
+     </ul>
+    </div>
+ </div>   
+    
+
+</section>
+    
+    <script>
+     window.sr = ScrollReveal();
+        sr.reveal('#navigation',{
+            origin:'top',
+            duration: 2000,
+            distance: '250px'
+        });
+        sr.reveal('.navbar-brand',{
+            origin:'left',
+            duration: 2200,
+            distance: '400px'
+        });
+        sr.reveal('h1',{
+            origin: 'top',
+            duration: 3000,
+            distance: '1000px'
+        });
+        sr.reveal('.card',{
+            duration:2000,
+            origin:'left',
+            distance:'1000px',
+            delay:500
+        });
+    
+    
+    
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
