@@ -1,0 +1,61 @@
+body{
+    background-color: transparent; 
+}
+
+nav{
+    font-family: 'Rancho';
+    font-size: 1.2em;
+}
+
+#show{
+    margin-top: 67px;
+}
+#show .container-fluid{
+    
+}
+
+.rowht{
+    height: 60vh;
+}
+
+
+@media(max-width: 768px){
+    .rowht{
+    height: 85vh;
+}
+
+
+
+}
+#show .bg{
+    background: url('../Media/restaurant-449952_1280.jpg') no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border: 2px ridge lightgray;
+    border-radius: 10px;
+}
+.bg2{
+    padding-bottom: 20px;
+    color: black;
+    border: 2px hidden;
+    border-radius: 20px;
+}
+h1{
+    margin-top: 60px;
+    color: yellow;
+}
+.fa{
+    font-size: 20px;
+    color: red;
+}
+.fa-star{
+    color: gold;
+}
+#show .btn{
+    color: blue;
+    background-color:darkorange;
+}
+
+
+

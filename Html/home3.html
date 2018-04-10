@@ -301,7 +301,7 @@
              
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
             
-             <img src="../Media/buffet-315691.jpg" class=" img-responsive img-rounded" height="100%" width="100%">
+             <img src="../Media/buffet-315691.jpg" class=" img-responsive img-rounded imgcuisines" height="100%" width="100%">
             
             </div>
             
@@ -413,9 +413,9 @@
  <div class="container">
     <div class="row footrow">
     
-    <div class="col-sm-12 col-md-6"><img class="img-responsive" height = "100%" width="100%" src="../Media/untitled.png"></div>
+    <div class="col-sm-12 col-md-6" style="height: 100%;width: 100%"><img class="img-responsive" height = "100%" width="100%" src="../Media/untitled.png"></div>
     
-    <div class="col-sm-12 col-md-6"><img class="" src="../Media/googleplay.png" height="100%" width="100%"></div></div>
+    <div class="col-sm-12 col-md-6"><img class="" src="../Media/googleplay.png" height="70%" width="100%" style="margin-top: 50px"></div></div>
     
      <hr style="background: lightgray ; width: 90%">
 
@@ -451,7 +451,16 @@
             duration:2000,
             origin:'left',
             distance:'1000px',
-            delay:500
+        });
+        sr.reveal('.imgcuisines',{
+            duration:2000,
+            origin:'left',
+            distance:'2000px'
+        });
+        sr.reveal('.cuisines',{
+            duration:2000,
+            origin:'right',
+            distance:'2000px'
         });
     
     

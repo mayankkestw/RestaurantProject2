@@ -1,0 +1,31 @@
+body{
+    background-color: transparent; 
+}
+
+nav{
+    font-family: 'Rancho';
+    font-size: 1.2em;
+}
+
+#show{
+    margin-top: 67px;
+}
+#show .container-fluid{
+    
+}
+
+.rowht{
+    height: 60vh;
+}
+
+
+@media(max-width: 768px){
+    .rowht{
+    height: 85vh;
+}
+
+
+
+}
+#show .bg{
+    background: url('../Media/restaurant-449952_1280.jpg') no-repeat cente
