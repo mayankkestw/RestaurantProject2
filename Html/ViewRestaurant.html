@@ -20,8 +20,49 @@
     <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
     <link rel="stylesheet" href="../CSS/view.css">
+    <style>@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+
+.rating > input:checked ~ label, 
+.rating:not(:checked) > label:hover, 
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  }
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, 
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } </style>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
@@ -88,9 +129,9 @@
               <center><span class="fa fa-star">Rating : 4.2/5</span><br><br>
               <p class="card-text">Location : Zira, Punjab</p>
               <p>Veg, Non-Veg, South Indian, Gujarati, and more</p>
-              <span class="fa fa-book"></span>&nbsp;<a href="#book" class="btn">Book a Table</a>
+              <span class="fa fa-book"></span>&nbsp;<a href="#book" class="btn" data-toggle="modal" data-target="#book">Book a Table</a>
                   &nbsp;<br><br>
-              <span class="fa fa-phone"></span>&nbsp;<a href="#book" class="btn">Order Online</a>
+              <span class="fa fa-phone"></span>&nbsp;<a href="../Html/home3.html" class="btn">Order Online</a>
               </center>
             </div>
           </div>
@@ -113,45 +154,48 @@
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
          
             <div class="card">
-   <img class="card-img-top" src="../Media/veg.jpg" alt="Card image">
-   <div class="card-body">
-       <h4 class="card-title">Pure Veg</h4>
-           <p class="card-text"></p>
-           <a href="#" class="btn btn-primary">Check</a>
-                </div></div>
+             <a href="ViewRestaurant.html">
+               <img class="card-img-top" src="../Media/veg.jpg" alt="Card image">
+               <div class="card-body">
+               <h4 class="card-title">Pure Veg</h4>
+               <p class="card-text"></p>
+           
+               </div></a></div>
          
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
          
             <div class="card">
-   <img class="card-img-top" src="../Media/non-veg1.jpg" alt="Card image">
-   <div class="card-body">
+               <a href="ViewRestaurant.html">
+               <img class="card-img-top" src="../Media/non-veg1.jpg" alt="Card image">
+               <div class="card-body">
        <h4 class="card-title">Non-Veg</h4>
            <p class="card-text"></p>
-           <a href="#" class="btn btn-primary">Check</a>
-                </div></div>
+                   </div></a></div>
          
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
          
             <div class="card">
-   <img class="card-img-top" src="../Media/south.jpg" alt="Card image">
-   <div class="card-body">
+                <a href="ViewRestaurant.html">
+               <img class="card-img-top" src="../Media/south.jpg" alt="Card image">
+               <div class="card-body">
        <h4 class="card-title">South Indian</h4>
            <p class="card-text"></p>
-           <a href="#" class="btn btn-primary">Check</a>
-                </div></div>
+           
+                    </div></a></div>
          
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
          
             <div class="card">
-   <img class="card-img-top" src="../Media/punjabi.jpg" alt="Card image">
-   <div class="card-body">
+         <a href="ViewRestaurant.html">
+         <img class="card-img-top" src="../Media/punjabi.jpg" alt="Card image">
+         <div class="card-body">
        <h4 class="card-title">Punjabi</h4>
            <p class="card-text"></p>
-           <a href="#" class="btn btn-primary">Check</a>
-                </div></div>
+           
+             </div></a></div>
          
         </div></div>
      </div>
@@ -177,7 +221,7 @@
              <form class="form" autocomplete="on">
                <input type="text" placeholder="Username" class="form-control" required><br>
                <input type="password" placeholder="Password" class="form-control" required><br>
-               <button type="submit" class="btn btn-secondary">Login</button><br><br>
+               <button type="submit" class="btn btn-secondary">Login</button>&nbsp;&nbsp;&nbsp;<button type="button" data-toggle="modal" data-target="#signup" class="btn btn-danger">Sign Up</button><br><br>
                <button type="button" class="btn btn-info btn-block"><span class="fa fa-facebook">&nbsp; &nbsp;&nbsp;Login with Facebook</span></button>
                <button type="button" class="btn btn-danger btn-block"><span class="fa fa-google">&nbsp; &nbsp;&nbsp;Login with Google</span></button>
 
@@ -203,7 +247,7 @@
                <input type="email" placeholder="Email" class="form-control"><br>
                <input type="password" placeholder="Password" class="form-control"><br>
                <input type="password" placeholder="Repeat Password" class="form-control"><br>
-               <button type="button" class="btn btn-warning btn-block">Sign Up</button>
+               <button type="button" class="btn btn-warning btn-block">Sign Up</button><a href="#">Already Registered?</a>
                <button type="button" class="btn btn-info btn-block"><span class="fa fa-facebook">&nbsp; &nbsp;&nbsp;Continue with Facebook</span></button>
                <button type="button" class="btn btn-danger btn-block"><span class="fa fa-google">&nbsp; &nbsp;&nbsp;Continue with Google</span></button>
              </form>
@@ -217,25 +261,72 @@
        <div class="modal-dialog" role="document">
          <div class="modal-content">
             <div class="modal-header">
-               <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+               <h5 class="modal-title" id="exampleModalLabel">Add Review</h5>
                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
-               <!-- Insert content here -->
+               <h1>Rajesh Verma</h1>
+<fieldset class="rating">
+    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+</fieldset>
+                <br><textarea></textarea>
             </div>
             <div class="modal-footer">
-               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-               <button type="button" class="btn btn-primary">Save changes</button>
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Dismiss</button>
+               <button type="button" class="btn btn-primary">Add</button>
             </div>
          </div>
       </div>
    </div>
     
     
+    <div class="modal fade" id="book" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Book a Table</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+               <div class="row">
+                 <div class="col-6"><center><span class="fa fa-table"></span><br><p>A</p>&nbsp;<input type="radio" name></center></div>
+                 <div class="col-6"><center><span class="fa fa-table"></span><br><p>B</p>&nbsp;<input type="radio"></center></div>
+                 </div>
+                <hr style="background: lightgray ; width: 90%">
+               <div class="row">
+                 <div class="col-6"><center><span class="fa fa-table"></span><br><p>C</p>&nbsp;<input type="radio"></center></div>
+                 <div class="col-6"><center><span class="fa fa-table"></span><br><p>D</p>&nbsp;<input type="radio"></center></div>
+               </div>
+                <hr style="background: lightgray ; width: 90%">
+                 <div class="row">
+                 <div class="col-6"><center><span class="fa fa-table"></span><br><p>E</p>&nbsp;<input type="radio"></center></div>
+                 <div class="col-6"><center><span class="fa fa-table"></span><br><p>F</p>&nbsp;<input type="radio"></center></div>
+                 </div>
+                <hr style="background: lightgray ; width: 90%">
+               <div class="row">
+                 <div class="col-6"><center><span class="fa fa-table"></span><br><p>G</p>&nbsp;<input type="radio"></center></div>
+                 <div class="col-6"><center><span class="fa fa-table"></span><br><p>I</p>&nbsp;<input type="radio"></center></div>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Leave</button>
+               <button type="button" class="btn btn-danger">Book</button>
+            </div>
+         </div>
+      </div>
+   </div>
     
     
-    
-    
+
     
     
     
@@ -292,9 +383,59 @@
        </div>
      </div>
     </section>
+    <hr style="background: lightgray ; width: 90%"><br>
+    <section id="footer">
+     <div class="container-fluid con1">
     
-<hr style="background: lightgray ; width: 90%">
+<div class="row">
+         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+         <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><center><a href="https://www.instagram.com"><span class="fa fa-instagram"></span></a></center></div>
+         <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><center><a href="https://www.facebook.com"><span class="fa fa-facebook"></span></a></center></div>
+         <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><center><a href="https://web.whatsapp.com"><span class="fa fa-whatsapp"></span></a></center></div>
+         <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><center><a href="https://twitter.com/login?lang=en"><span class="fa fa-twitter"></span></a></center>     </div>
+         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+</div>
+             <br>
+<div class="row">
+    <div class="col-12">
+    <ul>
+     <li><a href="#">Privacy Policy</a></li>
+     <li><a href="#">&copy; Copyright 2018 Foodie</a></li>
+     <li><a href="#">Terms and Conditions</a></li>
+    </ul>   
+    </div>        
+</div>
+        </div>
+         
+    </section>
     
+    <script>
+     window.sr=ScrollReveal();
+        sr.reveal('#show',{
+            origin:'left',
+            duration:2000,
+            distance:'500px',
+            rotate: {x:90,y:170}
+        });
+        sr.reveal('#dishes',{
+            origin:'left',
+            duration:2000,
+            distance:'500px',
+            delay: 1000,
+            rotate: {x:120,y:60}
+         });
+       sr.reveal('.review',{
+           origin:'right',
+           duration:2000,
+           distance:'400px'
+       })
+    
+    
+    
+    
+    
+    
+    </script>
      <script>
       function initMap() {
         var Shagun = {lat: 30.9643323, lng: 74.98295380000002};

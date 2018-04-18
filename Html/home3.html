@@ -42,7 +42,7 @@
                  <ul class="navbar-nav mr-auto">
                     <a class="nav-link home" href="#">Home</a>
                     <a class="nav-link about" href="#Restaurants">About</a>
-                    <a class="nav-link contact" href="#">Contact</a>
+                    <a class="nav-link contact" href="#footer">Contact</a>
                     
                     <div class="dropdown">
                      <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
@@ -63,7 +63,7 @@
                  </ul>
                      
                  <ul class="navbar-nav ml-auto">
-                    <img class="img" src="../Media/offer2.png" title="Offers" height="40px" width="40px" href="#offers">
+                    <img class="img" src="../Media/offer2.png" style="cursor:pointer;" data-toggle="modal" data-target="#offers" title="Offers" height="40px" width="40px" href="#offers">
                      &nbsp;
                     <a class="btn btn-info" href="#Login" data-toggle="modal" data-target="#login">Login</a>
                      &nbsp;
@@ -227,7 +227,7 @@
         
         <div class="col-sm-6 col-xs-12 col-md-6 col-lg-3 ">
         
-        <a href="#" style="text-decoration: none; color: black;">
+        <a href="ViewRestaurant.html" style="text-decoration: none; color: black;">
             <div class="card" >
                 <img class="card-img-top" src="../Media/rest5.jpg" alt="Card image">
                    <div class="card-body">
@@ -242,7 +242,7 @@
         </div>
         
         <div class="col-sm-6 col-xs-12 col-md-6 col-lg-3 ">
-         <a href="#" style="text-decoration: none; color: black;">
+         <a href="ViewRestaurant.html" style="text-decoration: none; color: black;">
             <div class="card" >
                 <img class="card-img-top" src="../Media/rest2.jpg" alt="Card image">
                    <div class="card-body">
@@ -258,7 +258,7 @@
         
         
         <div class="col-sm-6 col-xs-12 col-md-6 col-lg-3 ">
-        <a href="#" style="text-decoration: none; color: black;">
+        <a href="ViewRestaurant.html" style="text-decoration: none; color: black;">
         <div class="card" >
                 <img class="card-img-top" src="../Media/rsz_restaurant-449952_1920.jpg" alt="Card image">
                    <div class="card-body">
@@ -273,7 +273,7 @@
         </div>
         
         <div class="col-sm-6 col-xs-12 col-md-6 col-lg-3 ">
-          <a href="#" style="text-decoration: none; color: black;">
+          <a href="ViewRestaurant.html" style="text-decoration: none; color: black;">
             <div class="card">
                 <img class="card-img-top" src="../Media/rest4.jpg" alt="Card image">
                    <div class="card-body">
@@ -363,10 +363,10 @@
                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
-             <form class="form" autocomplete="on">
+             <form class="form" action="home3.html" autocomplete="on">
                <input type="text" placeholder="Username" class="form-control" required><br>
                <input type="password" placeholder="Password" class="form-control" required><br>
-               <button type="submit" class="btn btn-secondary">Login</button><br><br>
+               <button type="submit" class="btn btn-secondary">Login</button>&nbsp;&nbsp;&nbsp;<button type="button" data-toggle="modal" data-target="#signup" class="btn btn-danger">Sign Up</button><br><br>
                <button type="button" class="btn btn-info btn-block"><span class="fa fa-facebook">&nbsp; &nbsp;&nbsp;Login with Facebook</span></button>
                <button type="button" class="btn btn-danger btn-block"><span class="fa fa-google">&nbsp; &nbsp;&nbsp;Login with Google</span></button>
 
@@ -385,15 +385,15 @@
                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
-             <form method="get" action="" autocomplete="on">
-               <input type="text" placeholder="First Name" class="form-control"><br>
-               <input type="text" placeholder="Last Name" class="form-control"><br>
+             <form method="get" action="ViewRestaurant.html" autocomplete="on">
+               <input type="text" placeholder="First Name" class="form-control" required><br>
+               <input type="text" placeholder="Last Name" class="form-control" required><br>
                <div class="container row"><input type="number" placeholder="" value="91" class="form-control col-xs-2 col-sm-2 col-md-2" readonly>&nbsp;&nbsp;&nbsp;
-               <input type="tel" placeholder="Phone number" class="form-control col-xs-8 col-sm-8 col-md-8"></div><br>
-               <input type="email" placeholder="Email" class="form-control"><br>
-               <input type="password" placeholder="Password" class="form-control"><br>
-               <input type="password" placeholder="Repeat Password" class="form-control"><br>
-               <button type="button" class="btn btn-warning btn-block">Sign Up</button>
+               <input type="tel" placeholder="Phone number" class="form-control col-xs-8 col-sm-8 col-md-8" required></div><br>
+               <input type="email" placeholder="Email" class="form-control" required><br>
+               <input type="password" placeholder="Password" class="form-control" required><br>
+               <input type="password" placeholder="Repeat Password" class="form-control" required><br>
+               <button type="submit" class="btn btn-warning btn-block">Sign Up</button><a href="#">Already Registered ?</a><br>
                <button type="button" class="btn btn-info btn-block"><span class="fa fa-facebook">&nbsp; &nbsp;&nbsp;Continue with Facebook</span></button>
                <button type="button" class="btn btn-danger btn-block"><span class="fa fa-google">&nbsp; &nbsp;&nbsp;Continue with Google</span></button>
              </form>
@@ -403,6 +403,25 @@
       </div>
    </div> 
     
+  <div class="modal fade" id="offers" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title text-center" id="exampleModalLabel">Offers and Deals</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <a href="https://www.dominos.co.in/great-deals/online-pizza-coupons/"><img src="../Media/dominos.jpg" width="100%"></a>
+              <hr style="background: lightgray ; width: 80%">
+              <a href=""><img src="../Media/barbequee.jpg" width="100%"></a>
+            </div>
+            
+         </div>
+      </div>
+   </div>     
+        
+        
+        
     
     
     </section>
@@ -410,25 +429,28 @@
     
     
 <section id="footer">
+     <div class="container-fluid1">
     
- <div class="container">
-    <div class="row footrow">
-    
-    <div class="col-sm-12 col-md-6" style="height: 100%;width: 100%"><img class="img-responsive" height = "100%" width="100%" src="../Media/untitled.png"></div>
-    
-    <div class="col-sm-12 col-md-6"><img class="" src="../Media/googleplay.png" height="70%" width="100%" style="margin-top: 50px"></div></div>
-    
-     <hr style="background: lightgray ; width: 90%">
-
-    <div class="foot"> <ul>
+<div class="row">
+         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+         <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><center><a href="https://www.instagram.com"><span class="fa fa-instagram"></span></a></center></div>
+         <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><center><a href="https://www.facebook.com"><span class="fa fa-facebook"></span></a></center></div>
+         <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><center><a href="https://web.whatsapp.com"><span class="fa fa-whatsapp"></span></a></center></div>
+         <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><center><a href="https://twitter.com/login?lang=en"><span class="fa fa-twitter"></span></a></center>     </div>
+         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+</div>
+             <br>
+<div class="row">
+    <div class="col-12">
+    <ul>
      <li><a href="#">Privacy Policy</a></li>
      <li><a href="#">&copy; Copyright 2018 Foodie</a></li>
      <li><a href="#">Terms and Conditions</a></li>
-     </ul>
-    </div>
- </div>   
-    
-
+    </ul>   
+    </div>        
+</div>
+        </div>
+         
 </section>
     
     <script>
@@ -446,12 +468,12 @@
         sr.reveal('h1',{
             origin: 'top',
             duration: 3000,
-            distance: '1000px'
+            distance: '300px'
         });
         sr.reveal('.card',{
             duration:2000,
             origin:'left',
-            distance:'1000px',
+            distance:'300px',
         });
         sr.reveal('.imgcuisines',{
             duration:2000,

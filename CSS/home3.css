@@ -22,8 +22,6 @@ nav{
 
 
 
-
-
 /*Search*/
 #search{
     display: flex;
@@ -107,12 +105,15 @@ h1{
 
 /*foot*/
 #footer{
-    padding: 25px 0 0 0;
     background-color: black;
-    color: whitesmoke;
+    padding: 30px;
 }
-.footrow{
-    height: 100%;
+#footer .c1{
+    background-color: black !important;
+}
+#footer .fa{
+    font-size: 70px;
+    color: azure;
 }
 #footer ul{
    text-align: center;
@@ -120,12 +121,13 @@ h1{
 #footer li{
     list-style-type: none;
     display: inline-block;
-    padding: 20px;
+    padding-right: 20px;
 }
 #footer a{
     text-decoration: none;
     color: whitesmoke;
 }
+
 .fa-star{
     color: gold;
 }
