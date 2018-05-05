@@ -1,0 +1,60 @@
+nav{
+    font-family: 'Rancho';
+    font-size: 1.2em;
+}
+body{
+    background: url('../Media/omelet-3359364_1920.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+#about{
+    margin-top: 80px;
+    font-family: FontAwesome;
+    background: whitesmoke;
+    opacity: 0.8;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+h1{
+    font-size: 20vw;
+}
+tag{
+    font-family: FontAwesome;
+    color: blue;
+    font-size: 1.5em;
+}
+p{
+    padding: 4vw;
+}
+h2{
+    font-size: 1.2em;
+    font-family: FontAwesome;
+    display: inline;
+    padding: 2vw;
+}
+#footer{
+    background-color: black;
+    padding: 30px;
+}
+#footer .c1{
+    background-color: black !important;
+}
+#footer .fa{
+    font-size: 70px;
+    color: azure;
+}
+#footer ul{
+   text-align: center;
+}
+#footer li{
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 20px;
+}
+#footer a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.fa-star{
+    color: gold;
+}

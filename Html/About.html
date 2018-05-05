@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title>About - Foodie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="apple-touch-icon" href="">
+    <link rel="shortcut icon" href="../Media/icon.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="../CSS/About.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+         <div class="container">     
+              
+             <a class="navbar-brand" href="../Html/home3.html"><img src="../Media/icon.png" height="40px"> Foodie</a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarresponse" aria-controls="navbarresponse" aria-expanded="false" aria-label="toggle-navigation">
+             
+                <span class="navbar-toggler-icon"></span>
+                   
+               </button>
+                 
+                 <div class="collapse navbar-collapse" id="navbarresponse">
+             
+                 <ul class="navbar-nav mr-auto">
+                    <a class="nav-link" href="../Html/home3.html">Home</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#footer">Contact</a>
+                    
+                    <div class="dropdown">
+                     <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                       Food Services <span class="caret text-center"></span>
+                     </button>
+                      <ul class="dropdown-menu text-center">
+                        
+                        <a href="#MakeOrder" style="text-decoration: none">My Orders</a><br>
+                        <a href="#Track" style="text-decoration: none">Track Orders</a><br>
+                        <a href="#Special" style="text-decoration: none">Today's Special</a>
+
+                        
+                      
+                      </ul>
+                     
+                    </div>
+                     
+                 </ul>
+                     
+                 <ul class="navbar-nav ml-auto">
+                    <img class="img" src="../Media/offer2.png" style="cursor:pointer;" data-toggle="modal" data-target="#offers" title="Offers" height="40px" width="40px" href="#offers">
+                     &nbsp;
+                    <a class="btn btn-info" href="#Login" data-toggle="modal" data-target="#login">Login</a>
+                     &nbsp;
+                    <a class="btn btn-secondary" href="#SignUp" data-toggle="modal" data-target="#signup">Sign Up</a> 
+                 </ul>
+                     
+                </div>
+         </div>
+   </nav>
+    
+    <div id="about" >
+     <div class="container">
+       <center>
+          <div class="block">
+            <h1>Foodie</h1>
+           
+            <tag>"LIVE LOVE EAT"</tag>
+            
+            <p>
+              “Foodie” is a Web Design Project basically it is a Restaurant and Food Services website.
+               Restaurants you can search the Best near your location and can check the rating and the kind of food they offer. 
+               Food Services offers customer oriented eateries featuring countless and diverse menu choices. 
+               We have created an environment that offers customers quality, value and convenience.                
+            </p>
+          </div>
+               <h2>Created By - Mayank kestwal</h2>
+<br><br>
+       </center>
+       
+    
+     </div>
+    </div>
+    
+    <section id="modals">
+     <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="modal">Login</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+             <form class="form" autocomplete="on">
+               <input type="text" placeholder="Username" class="form-control" required><br>
+               <input type="password" placeholder="Password" class="form-control" required><br>
+               <button type="submit" class="btn btn-secondary">Login</button>&nbsp;&nbsp;&nbsp;<button type="button" data-toggle="modal" data-target="#signup" class="btn btn-danger">Sign Up</button><br><br>
+               <button type="button" class="btn btn-info btn-block"><span class="fa fa-facebook">&nbsp; &nbsp;&nbsp;Login with Facebook</span></button>
+               <button type="button" class="btn btn-danger btn-block"><span class="fa fa-google">&nbsp; &nbsp;&nbsp;Login with Google</span></button>
+
+             </form>
+            </div>
+         </div>
+      </div>
+   </div>
+        
+        
+   <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+             <form method="get" action="" autocomplete="on">
+               <input type="text" placeholder="First Name" class="form-control"><br>
+               <input type="text" placeholder="Last Name" class="form-control"><br>
+               <div class="container row"><input type="number" placeholder="" value="91" class="form-control col-xs-2 col-sm-2 col-md-2" readonly>&nbsp;&nbsp;&nbsp;
+               <input type="tel" placeholder="Phone number" class="form-control col-xs-8 col-sm-8 col-md-8"></div><br>
+               <input type="email" placeholder="Email" class="form-control"><br>
+               <input type="password" placeholder="Password" class="form-control"><br>
+               <input type="password" placeholder="Repeat Password" class="form-control"><br>
+               <button type="button" class="btn btn-warning btn-block">Sign Up</button><a href="#">Already Registered?</a>
+               <button type="button" class="btn btn-info btn-block"><span class="fa fa-facebook">&nbsp; &nbsp;&nbsp;Continue with Facebook</span></button>
+               <button type="button" class="btn btn-danger btn-block"><span class="fa fa-google">&nbsp; &nbsp;&nbsp;Continue with Google</span></button>
+             </form>
+            </div>
+            
+         </div>
+      </div>
+   </div>  
+        
+        
+    <div class="modal fade" id="offers" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title text-center" id="exampleModalLabel">Offers and Deals</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <a href="https://www.dominos.co.in/great-deals/online-pizza-coupons/"><img src="../Media/dominos.jpg" width="100%"></a>
+              <hr style="background: lightgray ; width: 80%">
+              <a href=""><img src="../Media/barbequee.jpg" width="100%"></a>
+            </div>
+            
+         </div>
+      </div>
+   </div>     
+    </section>
+    
+    
+    
+    <section id="footer">
+     <div class="container-fluid con1">
+    
+<div class="row">
+         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+         <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><center><a href="https://www.instagram.com"><span class="fa fa-instagram"></span></a></center></div>
+         <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><center><a href="https://www.facebook.com"><span class="fa fa-facebook"></span></a></center></div>
+         <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><center><a href="https://web.whatsapp.com"><span class="fa fa-whatsapp"></span></a></center></div>
+         <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1"><center><a href="https://twitter.com/login?lang=en"><span class="fa fa-twitter"></span></a></center>     </div>
+         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
+</div>
+             <br>
+<div class="row">
+    <div class="col-12">
+    <ul>
+     <li><a href="#">Privacy Policy</a></li>
+     <li><a href="#">&copy; Copyright 2018 Foodie</a></li>
+     <li><a href="#">Terms and Conditions</a></li>
+    </ul>   
+    </div>        
+</div>
+        </div>
+         
+    </section>
+    
+   
+             
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
